@@ -13,7 +13,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     <html>
       <head></head>
       <body>
-        <div className="font-['Helvetica'] text-sm lg:text-base tracking-tighter text-black/80 bg-white">
+        <div className="font-['Helvetica'] text-sm lg:text-base tracking-tighter text-black/80 bg-stone-100">
           <meta property="description" content={data.description} />
           <link rel="icon" type="image/png" href={data.icon} />
           <Header />
