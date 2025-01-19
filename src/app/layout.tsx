@@ -3,10 +3,17 @@ import { Navbar } from "@/components/navbar";
 import { FC, PropsWithChildren } from "react";
 import "./globals.css";
 import Script from "next/script";
+import localFont from "next/font/local";
+
+const berkeleyMono = localFont({
+  src: "./mono.otf",
+  display: "swap",
+  variable: "--font-mono",
+});
 
 const Layout: FC<PropsWithChildren> = (props) => {
   return (
-    <html>
+    <html lang="en" className={`${berkeleyMono.variable}`}>
       <head>
         <title>Daniel W3i</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,9 +44,7 @@ const Layout: FC<PropsWithChildren> = (props) => {
         />
         <style>{TOP_LEVEL_STYLING}</style>
       </head>
-      <body className="w-screen h-fit min-h-screen text-black bg-white dark:text-white dark:bg-black select-none md:overflow-hidden">
-        <Cover />
-        <Navbar />
+      <body className="w-screen h-fit min-h-screen text-black bg-white dark:text-white dark:bg-[#0B0A0F] select-none md:overflow-hidden">
         {props.children}
       </body>
     </html>
