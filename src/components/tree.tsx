@@ -49,7 +49,7 @@ const DESKTOP_TEXT = `  │
   │   ├── ⦿ Formerly
   │   │   ├── ⦾ Houston
   │   │   └── ⦾ Shanghai
-  │   └── ⦿ Currenty
+  │   └── ⦿ Currently
   │       ├── ⦾ The Residency, in New York City, NY
   │       └── ⦾ Ithaca, NY
   └── Presence

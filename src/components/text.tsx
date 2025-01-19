@@ -117,6 +117,13 @@ const PresenceBlock = () => (
       className="hover:text-neutral-600"
     >
       Photos
+    </a>{" "}
+    ⦾{" "}
+    <a
+      href="https://1drv.ms/b/c/55e0233076fdcc70/EXDM_XYwI-AggFWlfgAAAAABxVji_ZUuMKWd95gtGcuKcg?e=G1SPd9"
+      className="hover:text-neutral-600"
+    >
+      Resume
     </a>
     .
   </>
