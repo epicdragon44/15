@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import Client from "./client";
+import { DATA } from "./data";
 
 export default async function Page({
   params,
@@ -7,7 +8,8 @@ export default async function Page({
   params: Promise<{ designeng: string }>;
 }) {
   const state = (await params).designeng as any;
-  const file = await fs.readFile(process.cwd() + "/src/app/work.json", "utf8");
-  const { experiences } = JSON.parse(file);
-  return <Client experiences={experiences} state={state} />;
+  const relevantExperiences = DATA.experiences.filter(
+    (exp) => exp.category === state,
+  );
+  return <Client experiences={relevantExperiences} state={state} />;
 }

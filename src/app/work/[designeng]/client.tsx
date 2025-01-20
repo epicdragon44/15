@@ -3,29 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { DATA } from "./data";
 
 export default function Client({
   experiences,
   state,
 }: {
   state: "design" | "engineering";
-  experiences: Array<{
-    category: string;
-    link?: string;
-    name: string;
-    organization: string;
-    description: string;
-    period: string;
-    tags?: Array<string>;
-    image?: string;
-    brief: Array<string>;
-  }>;
+  experiences: typeof DATA.experiences;
 }) {
-  const relevantExperiences = experiences.filter(
-    (exp) => exp.category === state,
-  );
   const [currentExperience, setCurrentExperience] = useState<number>(0);
-  const currentImage = relevantExperiences[currentExperience].image;
+  const currentImage = experiences[currentExperience].image;
 
   return (
     <>
@@ -47,7 +35,7 @@ export default function Client({
           </tr>
         </thead>
         <tbody>
-          {relevantExperiences.map((exp, i) => (
+          {experiences.map((exp, i) => (
             <tr key={exp.name} onMouseOver={() => setCurrentExperience(i)}>
               <td>
                 <a href={exp.link}>{exp.link ? "LINK" : "N/A"}</a>
@@ -107,14 +95,14 @@ export default function Client({
         )}
         <div className="w-full h-full flex flex-col gap-2 px-2">
           <div className="flex flex-row gap-2 h-fit w-fit">
-            {relevantExperiences[currentExperience].tags?.map((tag) => (
+            {experiences[currentExperience].tags?.map((tag) => (
               <span key={tag} className="bg-white/30 text-white">
                 {tag}
               </span>
             ))}
           </div>
           <div className="w-full h-full flex flex-row gap-4 flex-wrap">
-            {relevantExperiences[currentExperience].brief.map((paragraph) => (
+            {experiences[currentExperience].brief.map((paragraph) => (
               <p key={paragraph} className="text-white/30 w-48">
                 {paragraph}
               </p>
