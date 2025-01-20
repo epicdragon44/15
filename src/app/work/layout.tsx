@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PropsWithChildren } from "react";
 
 export default async function Layout({ children }: PropsWithChildren) {
-  await new Promise((f) => setTimeout(f, Math.random() * 400 + 600));
+  await new Promise((f) => setTimeout(f, 840));
   return (
     <div
       id="primary-content"
