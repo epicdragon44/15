@@ -71,6 +71,14 @@ const TOP_LEVEL_STYLING = `
     letter-spacing: -0.04em;
     line-height: 1.32;
   }
+
+  td {
+    vertical-align: top;
+  }
+
+  tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 `;
 
 export default Layout;

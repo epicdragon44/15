@@ -2,11 +2,11 @@ import Link from "next/link";
 import { PropsWithChildren } from "react";
 
 export default async function Layout({ children }: PropsWithChildren) {
-  await new Promise((f) => setTimeout(f, Math.random() * 600 + 600));
+  await new Promise((f) => setTimeout(f, Math.random() * 400 + 600));
   return (
     <div
       id="primary-content"
-      className="font-mono text-sm tracking-tight relative px-4 md:px-12 py-4 md:py-12 flex flex-col h-full md:h-4/5 w-full"
+      className="font-mono text-xs tracking-tight relative px-4 md:px-12 py-4 md:py-12 flex flex-col h-full md:h-4/5 w-full"
     >
       <div className="h-fit border-b border-white/15 px-2 pb-10 flex flex-row gap-2 items-center">
         <Link
