@@ -7,7 +7,7 @@ export const Navbar: FC = () => {
       <Link className="translate-y-[2px]" href="/">
         ABOUT
       </Link>
-      <Link className="translate-y-[2px]" href="/work">
+      <Link className="translate-y-[2px]" href="/work/engineering">
         WORK
       </Link>
     </div>

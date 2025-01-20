@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 
-export const Loading: FC = () => {
+export default function Loading() {
   return (
     <div
       id="primary-content"
@@ -17,4 +17,4 @@ export const Loading: FC = () => {
       />
     </div>
   );
-};
+}

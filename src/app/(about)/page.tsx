@@ -1,7 +1,7 @@
-import { Cover } from "@/components/cover";
-import { Navbar } from "@/components/navbar";
-import { TextContent } from "@/components/about";
+import { TextContent } from "@/app/(about)/_ui/about";
 import { FC } from "react";
+import { Cover } from "./_ui/cover";
+import { Navbar } from "./_ui/navbar";
 
 const Page: FC = () => {
   return (

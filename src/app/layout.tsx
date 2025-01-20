@@ -1,5 +1,3 @@
-import { Cover } from "@/components/cover";
-import { Navbar } from "@/components/navbar";
 import { FC, PropsWithChildren } from "react";
 import "./globals.css";
 import Script from "next/script";

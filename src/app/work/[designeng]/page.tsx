@@ -1,87 +1,13 @@
-"use client";
-
-import { FC, useEffect, useMemo, useState } from "react";
-import { Logo } from "./logo";
-import { Loading } from "./loading";
-import { Back } from "./back";
-
-export const TreeContent: FC = () => {
-  const [state, setState] = useState<"loading" | "engineering" | "design">(
-    "loading",
-  );
-  const randomLoadTime = useMemo(
-    () =>
-      state === "loading" ? Math.random() * 600 + 600 : Math.random() * 20,
-    [state],
-  );
-
-  // change from 'loading' to 'design' after 3 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setState("design");
-    }, randomLoadTime);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (state === "loading") {
-    return <Loading />;
-  }
-
-  return (
-    <div
-      id="primary-content"
-      className="font-mono text-sm tracking-tight relative px-4 md:px-12 py-4 md:py-12 flex flex-col h-full md:h-4/5 w-full"
-    >
-      <Back />
-      <table className="table-auto align-top border-separate border-b-2 border-r-2 border-white pb-2 pr-2">
-        <colgroup className="">
-          <col className="bg-zinc-100/15" />
-          <col className="" />
-          <col className="bg-zinc-100/15" />
-          <col className="" />
-          <col className="bg-zinc-100/15" />
-        </colgroup>
-        <thead>
-          <tr className="text-left bg-zinc-100/15">
-            <th>LINK</th>
-            <th>PROJECT NAME</th>
-            <th>AFFILIATION</th>
-            <th>BRIEF</th>
-            <th>YEAR</th>
-          </tr>
-        </thead>
-        {state === "engineering" ? ENGINEERING : DESIGN}
-      </table>
-      <div className="w-full h-fit flex flex-row px-1 justify-between">
-        <span className="text-white/30">
-          Ping {Math.floor(randomLoadTime)}ms
-        </span>
-        <div className="w-fit h-full flex flex-row gap-1 justify-end">
-          <button
-            onMouseDown={() => setState("engineering")}
-            className={
-              state === "engineering"
-                ? "bg-white text-black"
-                : "bg-white/30 text-white"
-            }
-          >
-            ENGINEERING
-          </button>
-          <button
-            onMouseDown={() => setState("design")}
-            className={
-              state === "design"
-                ? "bg-white text-black"
-                : "bg-white/30 text-white"
-            }
-          >
-            DESIGN
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ designeng: string }>;
+}) {
+  const state = (await params).designeng as "design" | "engineering";
+  if (state === "design") return DESIGN;
+  if (state === "engineering") return ENGINEERING;
+  return <></>;
+}
 
 const ENGINEERING = (
   <tbody>
