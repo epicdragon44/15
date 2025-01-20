@@ -35,9 +35,8 @@ export const DATA: {
       brief: [
         "Shmood is a full-stack data platform that both ingests and sends communications between design agencies and their clients in order to tighten the asynchronous design feedback loop.",
         "To deliver the experience our user wanted, we needed the best of all worlds. The basics are simple: server-side rendering with Next.js for static shells, and a custom component library built atop our Tailwind CSS tokens and a heavily forked shadcn/ui variant. To get better at animations, I took Emil Kowalski's incredible course on it. Observability via OpenTelemetry and Playwright for end-to-end tests.",
-        "But that's not enough. We had to zero our load times for the lazy-loaded editor web-app. This involved building a local-first sync engine, Linear-style, from scratch, with MobX.",
-        "We also built a generalized, app-wide ingest and out-gest queue-based API to reliably normalize all inbound and outbound data at scale, no matter the shape, using chain-of-reasoning LLMs.",
-        "And a lot more. I'm proud of the work we've done, and I'm excited to see what the product grows into in the future.",
+        "But that's not enough. We had to zero our load times for the lazy-loaded editor web-app. This involved building a local-first sync engine, Linear-style, from scratch, with MobX. We also built a generalized, app-wide ingest and out-gest queue-based API to reliably normalize all inbound and outbound data at scale, no matter the shape, using chain-of-reasoning LLMs.",
+        "All this, and a lot more. I'm proud of the work we've done, and I'm excited to see what the product grows into in the future.",
       ],
     },
     {
@@ -105,7 +104,6 @@ export const DATA: {
         "Thesis: we should be able to index a code-base -- not just as it is, but as it was, by maximally squashing the history tree until the graph of commits converges on the graph of branches then. We should then be able to embed the intentionality behind any branch into a vector database, so that future comparisons of changes can be made efficiently at relatively constant speeds.",
         "If true, this would allow us to resolve merge conflicts and perform large refactors intelligently, by comparing the intent of the code, not just the code itself. This would be a game-changer for large codebases, and I'm excited to see where it goes.",
         "It would change how we collaborate on code, and how we think about code itself. Small teams would ship faster; large teams would no longer be held back by their lowest common denominator of wide-ranging changes all connected to the same underlying issue.",
-        "If you work at any of the following companies, I'm open to a chat: GitKraken, Github, Gitlab, Atlassian, Jetbrains, Anysphere, Codeium.",
       ],
     },
     {
@@ -139,7 +137,6 @@ export const DATA: {
         "It also supports HSL recoloring, region comments, AI-suggested similar image recommendation systems, and a powerful and expressive search and filtering system for large hospitals to use across their entire team.",
         "I designed and built the entirety of the Luciviewer frontend, from the initial Figma mockups to the final React components, over two and a half months in Austin, Texas, in the summer of 2023.",
         "Over the course of that first summer, as I did my initial UX/UI research, I wrote my thoughts down in a brief. You may access it at the respective link in the table above.",
-        "The Luciviewer is currently in use by several hospitals in the Texas Medical Center.",
       ],
     },
     {
