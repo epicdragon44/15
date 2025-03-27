@@ -5,8 +5,8 @@ export const Logo: FC = (props) => {
   return (
     <div className="relative w-full h-32 overflow-y-clip">
       <Link href="/">
-        <LightModeMini className="scale-125 hidden dark:block absolute bottom-0 left-8 w-96 translate-y-1/2 -translate-x-20 md:-translate-x-14 hover:translate-y-1/3 transition-transform ease-in-out duration-300" />
-        <DarkModeMini className="scale-125 block dark:hidden absolute bottom-0 left-8 w-96 translate-y-1/2 -translate-x-20 md:-translate-x-14 hover:translate-y-1/3 transition-transform ease-in-out duration-300" />
+        <LightModeMini className="scale-125 block absolute bottom-0 left-8 w-96 translate-y-1/2 -translate-x-20 md:-translate-x-14 hover:translate-y-1/3 transition-transform ease-in-out duration-300" />
+        {/* <DarkModeMini className="scale-125 block dark:hidden absolute bottom-0 left-8 w-96 translate-y-1/2 -translate-x-20 md:-translate-x-14 hover:translate-y-1/3 transition-transform ease-in-out duration-300" /> */}
       </Link>
     </div>
   );

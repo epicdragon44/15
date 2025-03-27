@@ -91,7 +91,7 @@ export const DATA: {
     },
     {
       category: "engineering",
-      link: "https://gitsynth.com",
+      link: "https://gitsynth.io",
       name: "GitSynth",
       organization: "Independent",
       description:

@@ -42,7 +42,7 @@ const Layout: FC<PropsWithChildren> = (props) => {
         />
         <style>{TOP_LEVEL_STYLING}</style>
       </head>
-      <body className="w-screen h-fit min-h-screen text-black bg-white dark:text-white dark:bg-[#0B0A0F] select-none md:overflow-hidden">
+      <body className="w-screen h-fit min-h-screen text-white bg-[#0B0A0F] select-none md:overflow-hidden">
         {props.children}
       </body>
     </html>
