@@ -76,6 +76,21 @@ export const DATA: {
     },
     {
       category: "engineering",
+      link: "https://gitsynth.com",
+      name: "GitSynth",
+      organization: "Independent",
+      description:
+        "Resolve Git merge conflicts and perform large refactors intelligently with graph-wide intent + context. Golang, HTMX, OCaml.",
+      tags: ["golang", "htmx", "ocaml", "functional"],
+      period: "2025",
+      image: "/assets/ascii-art-gitsynth.png",
+      brief: [
+        "Resolve your Git merge conflicts with one command. That's it.",
+        "GitSynth knows the context and history of your entire codebase, across branches. It's free and open source.",
+      ],
+    },
+    {
+      category: "engineering",
       link: "https://github.com/cornell-dti/trends-autograder/tree/main",
       name: "Trends Autograder",
       organization: "Design & Technology Initiative @ Cornell",
@@ -87,23 +102,6 @@ export const DATA: {
       brief: [
         "Effect is a Functional Programming standard library for TypeScript that allows us to create monadic, type-safe, side-effect-less code in TypeScript with dependency injection, concurrency, and reliability built in.",
         "Instead of taking five hours to grade some 50 students' homework every week for a semester, I wasted probably about the same amount of time writing this autograder instead.",
-      ],
-    },
-    {
-      category: "engineering",
-      link: "https://gitsynth.io",
-      name: "GitSynth",
-      organization: "Independent",
-      description:
-        "Resolve Git merge conflicts and perform large refactors intelligently with graph-wide intent + context. Golang, HTMX, OCaml.",
-      tags: ["golang", "htmx", "ocaml", "functional"],
-      period: "COMING SOON",
-      image: "/assets/ascii-art.png",
-      brief: [
-        "Building a tool to help developers resolve merge conflicts intelligently.",
-        "Thesis: we should be able to index a code-base -- not just as it is, but as it was, by maximally squashing the history tree until the graph of commits converges on the graph of branches then. We should then be able to embed the intentionality behind any branch into a vector database, so that future comparisons of changes can be made efficiently at relatively constant speeds.",
-        "If true, this would allow us to resolve merge conflicts and perform large refactors intelligently, by comparing the intent of the code, not just the code itself. This would be a game-changer for large codebases, and I'm excited to see where it goes.",
-        "It would change how we collaborate on code, and how we think about code itself. Small teams would ship faster; large teams would no longer be held back by their lowest common denominator of wide-ranging changes all connected to the same underlying issue.",
       ],
     },
     {
