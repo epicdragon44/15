@@ -44,25 +44,25 @@ const IntroBlock = () => (
 
 const PlaceBlock = () => (
   <>
-    He is inspired by a childhood in Houston ⦾ and Shanghai ⦿ and currently
-    lives at{" "}
-    <a href="https://www.livetheresidency.com/" className="hover:text-gray-600">
-      The Residency
-    </a>{" "}
-    in New York City ⦾ with a small upstate apartment in Ithaca, NY.
+    He is inspired by a childhood in Houston ⦾ and Shanghai ⦿ and is currently
+    based out of his studio on Roosevelt Island, New York City.
   </>
 );
 
 const WorkBlock = () => (
   <>
     He works at{" "}
+    <a href="https://elevenlabs.io/" className="hover:text-zinc-600">
+      Elevenlabs
+    </a>{" "}
+    ⦾ was previously Founding Engineer at{" "}
     <a href="https://shmood.io/" className="hover:text-red-600">
       Shmood
     </a>{" "}
     <a href="https://www.joinef.com/" className="hover:text-purple-600">
       (EF W23)
     </a>{" "}
-    out of their office in Manhattan ⦾ has previously worked at{" "}
+    ⦾ and has also worked at{" "}
     <a
       href="https://workspace.google.com/products/docs/"
       className="hover:text-blue-600"
