@@ -38,7 +38,12 @@ export default function Client({
           {experiences.map((exp, i) => (
             <tr key={exp.name} onMouseOver={() => setCurrentExperience(i)}>
               <td>
-                <a href={exp.link}>{exp.link ? "LINK" : "N/A"}</a>
+                <a
+                  href={exp.link}
+                  data-umami-event={exp.name + " LINK-CLICK from " + state}
+                >
+                  {exp.link ? "LINK" : "N/A"}
+                </a>
               </td>
               <td>{exp.name}</td>
               <td>{exp.organization}</td>

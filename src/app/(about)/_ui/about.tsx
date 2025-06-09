@@ -44,14 +44,15 @@ const IntroBlock = () => (
 
 const PlaceBlock = () => (
   <>
-    He is inspired by a childhood in Houston ⦾ and Shanghai ⦿ and is currently
-    based out of his studio on Roosevelt Island, New York City.
+    He is inspired by a childhood steeped in architecture and civil engineering
+    in Houston ⦾ and Shanghai ⦿ and is currently based out of a small studio in
+    Roosevelt Island, New York City.
   </>
 );
 
 const WorkBlock = () => (
   <>
-    He works at{" "}
+    He is currently an Engineer at{" "}
     <a href="https://elevenlabs.io/" className="hover:text-zinc-600">
       Elevenlabs
     </a>{" "}
@@ -76,9 +77,9 @@ const WorkBlock = () => (
     <a href="https://www.ycombinator.com/" className="hover:text-orange-600">
       (YC W19)
     </a>{" "}
-    ⦿ He is finishing his Bachelor’s of Arts at Cornell University in Computer
-    Science, minoring in ⦾ Design ⦾ and East Asian Studies ⦾ and previously led
-    teams on Cornell{" "}
+    ⦿ He obtained his Bachelor’s of Arts at Cornell University in Computer
+    Science, minoring in ⦾ East Asian Studies ⦾ and previously led teams on
+    Cornell{" "}
     <a href="https://www.cornelldti.org/" className="hover:text-rose-600">
       DTI
     </a>{" "}
@@ -113,7 +114,7 @@ const PresenceBlock = () => (
     </a>{" "}
     ⦾{" "}
     <a
-      href="https://www.are.na/daniel-wei/photos-2be4ijjv8gg"
+      href="https://www.playbook.com/s/danielwei15/canon-eos-m50-mark-ii-23-25"
       className="hover:text-neutral-600"
     >
       Photos
